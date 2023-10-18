@@ -103,10 +103,12 @@ img {
 .navigation-page {
     align-items: center;
     gap: 40px;
+    position: relative;
 }
 
-/*.navigation-page:nth-child(2) {
-    align-items: self-start;
+/*.navigation-page:nth-child(1) {
+    align-items: baseline;
+    align-self: flex-end;
 }*/
 
 .navigation-link {
@@ -123,11 +125,13 @@ img {
 
 .navigation-link--current::after{
     content: '';
-    width: 100%;
+    width: 48px;
     height: 4px;
     background-color: currentColor;
     border-radius: 2px;
     color: var(--pressed_state-color);
+    position: absolute;
+    top: 46px;
 }
 
 .address {
@@ -328,7 +332,7 @@ img {
   font-size: 20px;
   font-weight: 500;
   line-height: 1.2;
-  letter-spacing: 0.4px;
+  letter-spacing: 0.025em;
   margin-bottom: 8px;
   }
 
@@ -374,7 +378,7 @@ img {
     font-size: 20px;
     font-weight: 500;
     line-height: 1.2;
-    letter-spacing: 0.4px;
+    letter-spacing: 0.025em;
     text-align: center;
     margin-bottom: 8px;
     }
