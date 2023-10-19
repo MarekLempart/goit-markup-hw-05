@@ -26,7 +26,7 @@
             <nav class="navigation-list">
                 <a href="./index.html" class="navigation-logo link">Web<span class="logo-span">Studio</span></a>
                 <ul class="navigation-page list">
-                    <li><a href="./index.html" class="navigation-link link navigation-link--current">Studio</a></li>
+                    <li><a href="./index.html" class="navigation-link link navigation-link-studio--current">Studio</a></li>
                     <li><a href="./portfolio.html" class="navigation-link link">Portfolio</a></li>
                     <li><a href="" class="navigation-link link">Contacts</a></li>
                 </ul>
@@ -46,15 +46,7 @@
         <section class="hero-section background-image-section">
             <div class="container">
                 <h1 class="main-headline">Effective Solutions for Your Business</h1>
-                <button type="button" class="main-headline-button">Order Service</button>
-                <!--
-                    <button data-modal-open>OPEN</button>
-                
-                    <div class="modal is-hidden" data-modal>
-                        <button data-modal-close>CLOSE</button>
-                    </div>
-                                                  
-                -->
+                <button data-modal-open type="button" class="main-headline-button">Order Service</button>               
             </div>
         </section>
 
@@ -319,7 +311,13 @@
             </div>
         </div>
     </footer>
-    
+    <aside data-modal class="is-hidden modal-window">
+        <section class="modal-body">
+            <button data-modal-close type="button">x</button>
+            <h2>I am a modal</h2>
+        </section>            
+    </aside>
+    <script src="./js/modal.js"></script>
 </body>
 
-</html>
+</html>  
