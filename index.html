@@ -313,8 +313,12 @@
     </footer>
     <aside data-modal class="is-hidden modal-window">
         <section class="modal-body">
-            <button data-modal-close type="button">x</button>
-            <h2>I am a modal</h2>
+            <button data-modal-close class="modal-button" type="button">
+                <svg widtht="24" hidden="24" class="modal-button-icon">
+                    <use href="./images/icons.svg#icon-button-close"></use>
+                </svg>
+            </button>
+            <h2 class="sub-headline-modal visually-hidden">I am a modal</h2>
         </section>            
     </aside>
     <script src="./js/modal.js"></script>
