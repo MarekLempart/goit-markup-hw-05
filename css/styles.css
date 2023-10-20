@@ -207,12 +207,15 @@ img {
     border: 1px solid #e7e9fc;
     border-radius: 4px;
     transition-property: color, background-color, border, box-shadow;
+    transition: transform var(--transition-duration) var(--transition-tf);
+    
+    /*transition-property: color, background-color, border, box-shadow;
     /*transition-property: background-color;
     transition-property: border;
-    transition-property: box-shadow;*/
+    transition-property: box-shadow;
     transition-duration: var(--transition-duration);
     transition-timing-function: var(--transition-tf);
-    /*transition-property: background-color;
+    transition-property: background-color;
     transition-duration: var(--transition-duration);
     transition-timing-function: var(--transition-tf);
     transition-property: border;
@@ -300,8 +303,6 @@ transform: box-shadow var(--transition-duration) var(--transition-tf);
     padding: 40px 32px;
     transform: translateY(100%);
     transition: transform var(--transition-duration) var(--transition-tf);
-    /*transition-duration: var(--transition-duration);
-    transition-timing-function: var(--transition-tf);*/
 }
 
 .text-projekt-wrapper:hover,
