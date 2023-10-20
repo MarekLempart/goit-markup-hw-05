@@ -284,10 +284,15 @@ img {
     transition: transform var(--transition-duration) var(--transition-tf);
 }
 
-.text-projekt-wrapper:hover,
-.text-projekt-wrapper:focus {
+.projekt-photo-wrapper:hover .text-projekt-wrapper,
+.projekt-photo-wrapper:focus .text-projekt-wrapper {
     transform: translateY(0%);
 }
+
+/*.text-projekt-wrapper:hover,
+.text-projekt-wrapper:focus {
+    transform: translateY(0%);
+}*/
 
 /*
 .projekt-photo-wrapper figcaption {
@@ -671,7 +676,7 @@ img {
     top: 50%;
     left: 50%;
     width: 408px;
-    height: 584px;
+    min-height: 584px;
     border-radius: 4px;
     flex-shrink: 0;
     background-color: var(--modal_background-color);
@@ -706,16 +711,17 @@ img {
 .modal-button:focus {
     background-color: var(--pressed_state-color);
     border: none;
+    fill: var(--white_background-color);
 }
 
 .modal-button-icon {
     transition: fill var(--transition-duration) var(--transition-tf);
 }
 
-.modal-button-icon:hover,
+/*.modal-button-icon:hover,
 .modal-button-icon:focus {
     fill: var(--white_background-color);
-}
+}*/
 
 .is-hidden {
     pointer-events: none;
