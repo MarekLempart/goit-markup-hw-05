@@ -288,36 +288,6 @@ img {
     transform: translateY(0%);
 }
 
-/*.text-projekt-wrapper:hover,
-.text-projekt-wrapper:focus {
-    transform: translateY(0%);
-}*/
-
-/*
-.projekt-photo-wrapper figcaption {
-    position: absolute;
-    inset: 0;
-    background-color: var(--primary_brand-color);
-    translate: 0 100%;
-    transition-property: translate, opacity;
-    transition-duration: var(--transition-duration);
-    transition-timing-function: var(--transition-tf);
-}
-
-.projekt-photo-wrapper:hover figcaption {
-    opacity: 1;
-    translate: 0;
-}
-
-.text-projekt-wrapper {
-    color: var(--light-color);
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    max-width: 296px;
-    margin: 40px 32px auto 32px;
-}*/
-
 /*Studio Hero Section no. 1 Styles*/
 
 .hero-section {
@@ -503,13 +473,6 @@ img {
     background-color: var(--pressed_state-color);
 }
 
-/*.socials-icon-box {
-    fill: var(--light-color);
-    display: block;
-    width: 16px;
-    height: 16px;
-}*/
-
 /*Studio Customers Section no. 5 Styles*/
 
 .section-customers {
@@ -662,7 +625,6 @@ img {
     background-color: var(--navy-blue-modal);
     transition: opacity var(--transition-duration) var(--transition-tf),
     visibility var(--transition-duration) var(--transition-tf);
-
 }
 
 .modal-window.is-hidden {
@@ -716,11 +678,6 @@ img {
 .modal-button-icon {
     transition: fill var(--transition-duration) var(--transition-tf);
 }
-
-/*.modal-button-icon:hover,
-.modal-button-icon:focus {
-    fill: var(--white_background-color);
-}*/
 
 .is-hidden {
     pointer-events: none;
