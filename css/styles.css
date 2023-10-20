@@ -656,6 +656,9 @@ img {
     opacity: 1;
     pointer-events: all;
     background-color: var(--navy-blue-modal);
+    transition: opacity var(--transition-duration) var(--transition-tf),
+    visibility var(--transition-duration) var(--transition-tf);
+
 }
 
 .modal-window.is-hidden {
@@ -664,6 +667,9 @@ img {
 }
 
 .modal-body {
+    position: absolute;
+    top: 50%;
+    left: 50%;
     width: 408px;
     height: 584px;
     border-radius: 4px;
@@ -673,28 +679,42 @@ img {
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20),
         0px 1px 3px 0px rgba(0, 0, 0, 0.12),
         0px 1px 1px 0px rgba(0, 0, 0, 0.14);
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform var(--transition-duration) var(--transition-tf);
 }
 
 .modal-button {
-    display: block;
-    width: auto;
-    height: auto;
-    margin-top: 24px;
-    margin-left: auto;
-    margin-right: 24px;
-}
-
-.modal-button-icon {
+    position: absolute;
     display: block;
     width: 24px;
     height: 24px;
-    fill: var(--accent-color);
-    stroke: var(--dark-color);
+    top: 24px;
+    right: 24px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--accent-color);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0;
+    cursor: pointer;
+    transition: background-color var(--transition-duration) var(--transition-tf),
+    border var(--transition-duration) var(--transition-tf);
 }
 
-.modal-button-icon:active {
-    fill: var(--pressed_state-color);
-    stroke: var(--light-color);
+.modal-button:hover,
+.modal-button:focus {
+    background-color: var(--pressed_state-color);
+    border: none;
+}
+
+.modal-button-icon {
+    transition: fill var(--transition-duration) var(--transition-tf);
+}
+
+.modal-button-icon:hover,
+.modal-button-icon:focus {
+    fill: var(--white_background-color);
 }
 
 .is-hidden {
